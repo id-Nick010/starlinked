@@ -19,7 +19,8 @@
 .wel-button-container {
     @apply 
     flex 
-    flex-col 
+    flex-col
+    w-50
     space-y-3 
     mt-20;
 }
@@ -28,5 +29,6 @@
     @apply 
     px-5 
     bg-transparent 
-    text-3xl; 
+    text-3xl
+    font-thin; 
 }

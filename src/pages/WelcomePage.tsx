@@ -3,6 +3,7 @@ import starlinkedLogo from '../assets/starlinked_logo.svg'
 import Modal from '../components/Modal'
 import '../styles/welcomepage.css'
 import { useNavigate } from 'react-router-dom'
+import DefaultButton from '../components/DefaultButton'
 
 function WelcomePage () {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -20,9 +21,9 @@ function WelcomePage () {
                 <p className='text-gray-600'>Starlinked: Focus together, from anywhere. A cozy virtual space for deep work, shared moments, and Pomodoro-powered productivity, with friends, partners, or your team.</p>
             </Modal>
             <div className='wel-button-container'>
-                <button className='wel-button'>join a space</button>
-                <button onClick={() => navigate('/createSpace')} className='wel-button'>create a space</button>
-                <button onClick={()=> setModalOpen(true)} className='wel-button'>about</button>
+                <DefaultButton label='join a space'/>
+                <DefaultButton onClick={() => navigate('/createSpace')} label='create a space'/>
+                <DefaultButton onClick={()=> setModalOpen(true)} label='about'/>
             </div>
         </div>
     );
