@@ -1,0 +1,34 @@
+@reference "../index.css";
+
+.welcome-container {
+    @apply 
+    font-sarabun 
+    flex 
+    flex-col 
+    items-center 
+    justify-center 
+    w-screen 
+    h-screen 
+    bg-linear-to-b 
+    from-grad-blue 
+    via-grad-light-blue 
+    to-grad-violet
+    text-white
+    ;
+}
+
+.wel-button-container {
+    @apply 
+    flex 
+    flex-col 
+    space-y-3 
+    mt-20;
+}
+
+.wel-button {
+    @apply 
+    px-5 
+    bg-transparent 
+    text-3xl
+    ; 
+}
