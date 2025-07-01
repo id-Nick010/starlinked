@@ -13,8 +13,7 @@
     from-grad-blue 
     via-grad-light-blue 
     to-grad-violet
-    text-white
-    ;
+    text-white;
 }
 
 .wel-button-container {
@@ -29,6 +28,5 @@
     @apply 
     px-5 
     bg-transparent 
-    text-3xl
-    ; 
+    text-3xl; 
 }
