@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 
 type StarProps = {
     id: number;
@@ -9,7 +9,7 @@ type StarProps = {
 
 const Star: React.FC<StarProps> = ({x, y, delay}) => (
     <div 
-        className='absolute w-2 h-2 bg-yellow-star/60 rounded-full animate-blink'
+        className='absolute w-2.5 h-2.5 bg-yellow-star/60 rounded-full animate-blink'
         style={{
             top: `${y}%`,
             left: `${x}%`,
@@ -19,16 +19,17 @@ const Star: React.FC<StarProps> = ({x, y, delay}) => (
 );
 
 const Starfield: React.FC = () => {
-  const stars = Array.from({ length: 150 }, (_, i) => ({
-    id: i,
-    x: Math.random() * 100,
-    y: Math.random() * 100,
-    delay: Math.random() * 3,
-  }));
+  const stars = useRef(
+    Array.from({ length: 150 }, (_, i) => ({
+      id: i,
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      delay: Math.random() * 3,
+  })));
 
   return (
     <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
-      {stars.map((star) => (
+      {stars.current.map((star) => (
         <Star key={star.id} {...star} />
       ))}
     </div>

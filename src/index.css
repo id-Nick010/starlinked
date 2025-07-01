@@ -23,6 +23,17 @@
       }
   }
 
+  --animate-breath: breath 5.5s infinite ease-in-out;
+  @keyframes breath {
+    0%, 100% {
+      transform: scale(1.05);
+    }
+    50% {
+      transform: scale(1);
+    }
+    
+  }
+
 }
 
 body {

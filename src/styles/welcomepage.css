@@ -20,7 +20,7 @@
     @apply 
     flex 
     flex-col
-    w-50
+    w-60
     space-y-3 
     mt-20;
 }
