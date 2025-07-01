@@ -4,6 +4,7 @@ import Modal from '../components/Modal'
 import '../styles/welcomepage.css'
 import { useNavigate } from 'react-router-dom'
 import DefaultButton from '../components/DefaultButton'
+import Starfield from '../components/StarField'
 
 function WelcomePage () {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -11,7 +12,8 @@ function WelcomePage () {
     
     return (
         <div className="welcome-container">
-        <div className='flex flex-row w-md justify-between'>
+            <Starfield/>
+            <div className='flex flex-row w-md justify-between'>
                 <h2 className='font-sarabun self-start text-4xl italic w-2/4'>Welcome to</h2>
                 <div className=' h-1 bg-white my-4 w-2/4'></div>
             </div>
