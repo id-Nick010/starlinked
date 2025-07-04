@@ -11,9 +11,9 @@ export default function Modal({ isOpen , onClose, children}: ModalProps) {
 
   return (
     <div className="fixed inset-0 flex justify-center items-center z-50">
-      <div className="bg-white p-5 rounded shadow-lg w-100 h-80 flex flex-col items-center justify-between">
+      <div className="bg-white/20 p-5 backdrop-blur-3xl backdrop-saturate-180% rounded-3xl shadow-lg w-100 h-80 flex flex-col items-center justify-between">
         {children}
-        <button onClick={onClose} className="mt-4 text-violet-800">Close</button>
+        <button onClick={onClose} className="mt-4 py-1 px-3 rounded-2xl text-violet-800 hover:bg-btn-violet hover:scale-110 text-white">Close</button>
       </div>
     </div>
   );

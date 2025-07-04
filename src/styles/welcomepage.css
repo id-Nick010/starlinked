@@ -32,3 +32,10 @@
     text-3xl
     font-thin; 
 }
+
+.intro-container {
+    @apply
+    flex
+    flex-col
+    items-center;
+}

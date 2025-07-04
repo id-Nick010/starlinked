@@ -12,6 +12,7 @@
   --color-grad-light-blue: #305185;
   --color-grad-violet: #756291;
   --color-yellow-star: #F8BE68;
+  --color-btn-violet: #6b3590;
 
   --animate-blink: blink 2.5s infinite ease-in-out;
   @keyframes blink {
