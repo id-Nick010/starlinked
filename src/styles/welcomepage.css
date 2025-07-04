@@ -9,10 +9,6 @@
     justify-center 
     w-screen 
     h-screen 
-    bg-linear-to-b 
-    from-grad-blue 
-    via-grad-light-blue 
-    to-grad-violet
     text-white;
 }
 

@@ -1,7 +1,7 @@
 function CreateSpace() {
     return (
-        <div>
-            <h2>Create Space Page</h2>
+        <div className="flex justify-center items-center w-screen h-screen">
+            <h1>Create Space Page</h1>
         </div>
     )
 }

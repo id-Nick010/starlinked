@@ -12,7 +12,6 @@ function WelcomePage () {
     
     return (
         <div className="welcome-container">
-            <Starfield/>
             <div className="intro-container">
                 <div className='flex flex-row w-full justify-between'>
                     <h2 className='font-sarabun font-thin italic font-it self-start text-4xl w-1/2'>Welcome to</h2>
@@ -21,7 +20,7 @@ function WelcomePage () {
                 <img src={starlinkedLogo} alt='starlinked logo' className='h-30 w-auto animate-breath'/>
             </div>
             <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
-                <h2 className="text-lg text-white font-bold">Made by Klydo Studio</h2>
+                <h2 className="text-lg text-white font-semibold">Made by Klydo Studio</h2>
                 <p className='text-gray-100 text-center text-md font-extralight'>Starlinked: Focus together, from anywhere. A cozy virtual space for deep work, shared moments, and Pomodoro-powered productivity, with friends, partners, or your team.</p>
             </Modal>
             <div className='wel-button-container'>
