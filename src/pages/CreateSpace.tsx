@@ -1,14 +1,10 @@
-import DefaultButton from "../components/DefaultButton";
-import { useNavigate } from "react-router-dom";
 import NavBar from "../components/NavBar";
 
 function CreateSpace() {
-    const navigate = useNavigate();
     return (
         <div className="flex flex-col justify-start items-center w-screen h-screen">
             <NavBar />
             <h1>Create Space Page</h1>
-            <DefaultButton textSize="md" onClick={() => navigate('/')} label='Go back'/>
             <section className=''>
                 <h2>What do you want to name your space?</h2>
                 <input type='text' placeholder='Please enter your space name...'/>

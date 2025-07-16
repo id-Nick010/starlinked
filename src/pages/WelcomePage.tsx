@@ -4,7 +4,6 @@ import Modal from '../components/Modal'
 import '../styles/welcomepage.css'
 import { useNavigate } from 'react-router-dom'
 import DefaultButton from '../components/DefaultButton'
-import Starfield from '../components/Starfield'
 
 function WelcomePage () {
     const [isModalOpen, setModalOpen] = useState(false);
